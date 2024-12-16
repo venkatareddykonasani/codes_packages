@@ -177,28 +177,6 @@ print(f"{len(test_pairs)} test pairs")
 
 - **Display Split Counts**: Prints the total number of sentence pairs and their distribution across training, validation, and test sets.
 
----
-
-### Key Points
-
-1. **Dataset Source**:
-   - The dataset is downloaded from a predefined URL and automatically extracted.
-   - It contains parallel English-Spanish sentence pairs.
-
-2. **Preprocessing**:
-   - Sentences are tokenized by splitting on tab characters.
-   - `[start]` and `[end]` tokens are added to the target (Spanish) sentences.
-
-3. **Data Splits**:
-   - Training set (70%), validation set (15%), and test set (15%) are created after shuffling the data.
-
-4. **Example Usage**:
-   ```python
-   print(train_pairs[0])  # Prints the first training pair.
-   ```
-
----
-
 ### Example Output (Sample Execution)
 
 ```plaintext
@@ -213,13 +191,15 @@ Sample Data Points
 17688 test pairs
 ```
 
+---
+
 #### Overview of `TextVectorization`
 
 The `TextVectorization` layer transforms text data into integer sequences:
 - **Integer Sequences**: Each word in the text is mapped to an integer, which represents its index in a predefined vocabulary.
 - **Two Instances**: One layer is used for English text, and another is used for Spanish text, with different configurations.
 
----
+
 
 #### Configuration Parameters
 
@@ -325,8 +305,6 @@ for i in random.sample(range(1, 100000), 3):
 - **Random Samples**:
   - Selects three random indices from the training data.
   - Prints the raw English and Spanish sentences alongside their vectorized representations.
-
----
 
 ### Example Output
 
