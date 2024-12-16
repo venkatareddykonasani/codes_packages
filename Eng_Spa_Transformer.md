@@ -213,9 +213,6 @@ Sample Data Points
 17688 test pairs
 ```
 
-
-### Explanation
-
 #### Overview of `TextVectorization`
 
 The `TextVectorization` layer transforms text data into integer sequences:
