@@ -23,7 +23,7 @@ def main():
     user_details = get_user_details()
     print("\nUser Details:")
     for key, value in user_details.items():
-        #print(f"{key.capitalize()}: {value}")
+        print(f"{key.capitalize()}: {value}")
 
 if __name__ == "__main__":
     main()
